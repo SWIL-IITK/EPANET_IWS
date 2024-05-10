@@ -1,0 +1,141 @@
+[TITLE]
+
+[JUNCTIONS]
+ 2                                    65.0000
+ 2-PseudoN-1                          65.0000
+ 2-PseudoN-2                          65.0000
+ 2-CN                                 72.0000
+
+[RESERVOIRS]
+ 1                                    75.0000                                
+
+[TANKS]
+ 2-OHT                                72.0000       0.0000       0.0000       2.0000      30.2776       0.0000                                
+
+[PIPES]
+ 1                               1                               2                                  1000.0000     150.0000     100.0000       0.0000       
+ 2-PseudoP                       2                               2-PseudoN-1                           0.1000    1000.0000     130.0000       0.0200 CV    
+ 2-AP_to_OHT                     2-PseudoN-2                     2-OHT                                10.0000     301.7286     130.0000       0.0200       
+ 2-AP_to_CN                      2-OHT                           2-CN                                  5.0000     201.2053     130.0000       0.0200       
+
+[PUMPS]
+
+[VALVES]
+ 2-FCV                           2-PseudoN-1                     2-PseudoN-2                        1000.0000   FCV       0.0000       0.0000
+
+[DEMANDS]
+ 2                                     0.000000  1                              
+ 2-PseudoN-1                           0.000000                                
+ 2-PseudoN-2                           0.000000                                
+ 2-CN                                  5.000000  1                              
+
+[EMITTERS]
+
+[STATUS]
+
+[PATTERNS]
+;Diurnal demand pattern
+ 1                                     0.0800       0.0800       0.0900       0.0900       0.1000       0.1000
+ 1                                     1.9600       1.9800       1.9800       1.9600       2.2200       2.2400
+ 1                                     0.7500       0.7500       0.6500       0.7000       0.8000       0.9200
+ 1                                     2.6600       2.5600       0.5700       0.2900       0.2600       0.2100
+
+[CURVES]
+
+[CONTROLS]
+
+[RULES]
+
+[QUALITY]
+
+[SOURCES]
+
+[MIXING]
+ 2-OHT                           MIXED       -nan(ind)
+
+[REACTIONS]
+ ORDER  BULK            1.00
+ ORDER  WALL            1
+ ORDER  TANK            1.00
+ GLOBAL BULK            0.000000
+ GLOBAL WALL            0.000000
+
+[ENERGY]
+ GLOBAL EFFIC        75.0000
+ DEMAND CHARGE       0.0000
+
+[TIMES]
+ DURATION            240:00:00
+ HYDRAULIC TIMESTEP  1:00:00
+ QUALITY TIMESTEP    0:05:00
+ REPORT TIMESTEP     1:00:00
+ REPORT START        0:00:00
+ PATTERN TIMESTEP    1:00:00
+ PATTERN START       0:00:00
+ RULE TIMESTEP       0:06:00
+ START CLOCKTIME     0:00:00
+ STATISTIC           NONE
+
+[OPTIONS]
+ UNITS               LPS
+ PRESSURE            METERS
+ HEADLOSS            H-W
+ UNBALANCED          CONTINUE 10
+ QUALITY             NONE
+ DEMAND MULTIPLIER   1.0000
+ EMITTER EXPONENT    0.5000
+ VISCOSITY           1.000000
+ DIFFUSIVITY         1.000000
+ SPECIFIC GRAVITY    1.000000
+ TRIALS              40
+ ACCURACY            0.00100000
+ TOLERANCE           0.01000000
+ CHECKFREQ           2
+ MAXCHECK            10
+ DAMPLIMIT           0.00000000
+
+[REPORT]
+ PAGESIZE            0
+ STATUS              NO
+ SUMMARY             NO
+ ENERGY              NO
+ MESSAGES            YES
+ NODES               NONE
+ LINKS               NONE
+ Elevation           NO
+ Demand              PRECISION 2
+ Head                PRECISION 2
+ Pressure            PRECISION 2
+ Quality             NO
+ Length              NO
+ Diameter            NO
+ Flow                PRECISION 2
+ Velocity            PRECISION 2
+ Headloss            PRECISION 2
+ Quality             NO
+ State               NO
+ Setting             NO
+ Reaction            NO
+
+[COORDINATES]
+ 2                                  5164.131000    6293.034000
+ 2-PseudoN-1                           0.000000       0.000000
+ 2-PseudoN-2                           0.000000       0.000000
+ 2-CN                                  0.000000       0.000000
+ 1                                  -216.173000    6156.926000
+ 2-OHT                                 0.000000       0.000000
+
+[VERTICES]
+
+[TAGS]
+
+[LABELS]
+;X-Coord             Y-Coord             Label & Anchor Node
+
+[BACKDROP]
+  DIMENSIONS  	0.000             	0.000             	10000.000         	10000.000         
+ UNITS          	None
+ FILE           	
+ OFFSET         	0.00            	0.00            
+
+[END]

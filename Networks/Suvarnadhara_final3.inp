@@ -1,0 +1,295 @@
+[TITLE]
+Scenario: Base 
+Date: 11/14/2023 4:24:54 PM 
+
+[JUNCTIONS]
+;ID              	Elev        	Demand      	Pattern         
+ J-846           	138.29      	0.059       	1               	;
+ J-847           	120.78      	0.049       	1               	;
+ J-848           	130.02      	0.092       	1               	;
+ J-849           	105.027     	0.034       	1               	;
+ J-850           	113.14      	0.061       	1               	;
+ J-851           	93.83       	0.021       	1               	;
+ J-852           	113.98      	0.018       	1               	;
+ J-853           	123.17      	0.007       	1               	;
+ J-854           	112.31      	0.025       	1               	;
+ J-855           	109.81      	0.007       	1               	;
+ J-857           	113.05      	0.039       	1               	;
+ J-858           	110.13      	0.013       	1               	;
+ J-859           	108.47      	0.037       	1               	;
+ J-860           	108.87      	0.042       	1               	;
+ J-861           	104.95      	0.032       	1               	;
+ J-862           	87.509      	0.013       	1               	;
+ J-863           	104.57      	0.059       	1               	;
+ J-864           	77.537      	0.058       	1               	;
+ J-865           	104.88      	0.022       	1               	;
+ J-866           	108.19      	0.017       	1               	;
+ J-867           	104.82      	0.066       	1               	;
+ J-868           	106.88      	0.013       	1               	;
+ J-869           	88.062      	0.052       	1               	;
+ J-870           	109.26      	0.032       	1               	;
+ J-871           	91.47       	0.013       	1               	;
+ J-872           	108.58      	0.037       	1               	;
+ J-873           	111.54      	0.034       	1               	;
+ J-874           	111.99      	0.005       	1               	;
+ J-875           	127.48      	0.027       	1               	;
+ J-876           	116.39      	0.039       	1               	;
+ J-877           	118.36      	0.019       	1               	;
+ 1               	180         	-5          	2               	;
+
+[RESERVOIRS]
+;ID              	Head        	Pattern         
+
+[TANKS]
+;ID              	Elevation   	InitLevel   	MinLevel    	MaxLevel    	Diameter    	MinVol      	VolCurve        	Overflow
+ T-44            	180         	1.04        	0.01        	2.1         	6           	0           	                	;
+
+[PIPES]
+;ID              	Node1           	Node2           	Length      	Diameter    	Roughness   	MinorLoss   	Status
+ P-448           	T-44            	J-846           	117         	54.2        	145         	0           	Open  	;
+ P-449           	J-846           	J-847           	258         	50          	150         	0           	Open  	;
+ P-450           	J-847           	J-848           	418         	50          	150         	0           	Open  	;
+ P-451           	J-848           	J-849           	444         	50          	150         	0           	Open  	;
+ P-452           	J-848           	J-850           	516         	50          	150         	0           	Open  	;
+ P-453           	J-850           	J-851           	313         	50          	150         	0           	Open  	;
+ P-454           	J-850           	J-852           	82          	50          	150         	0           	Open  	;
+ P-455           	J-852           	J-853           	111         	40          	150         	0           	Open  	;
+ P-456           	J-852           	J-854           	82          	50          	150         	0           	Open  	;
+ P-457           	J-854           	J-855           	97          	40          	150         	0           	Open  	;
+ P-459           	J-854           	J-857           	194         	50          	150         	0           	Open  	;
+ P-460           	J-857           	J-858           	188         	40          	150         	0           	Open  	;
+ P-461           	J-857           	J-859           	204         	50          	150         	0           	Open  	;
+ P-462           	J-846           	J-860           	506         	54.2        	145         	0           	Open  	;
+ P-463           	J-860           	J-859           	83          	50          	150         	0           	Open  	;
+ P-464           	J-859           	J-861           	260         	50          	150         	0           	Open  	;
+ P-465           	J-861           	J-862           	187         	40          	150         	0           	Open  	;
+ P-466           	J-861           	J-863           	31          	50          	150         	0           	Open  	;
+ P-467           	J-863           	J-864           	800         	50          	150         	0           	Open  	;
+ P-468           	J-863           	J-865           	54          	50          	150         	0           	Open  	;
+ P-469           	J-865           	J-866           	254         	40          	150         	0           	Open  	;
+ P-470           	J-865           	J-867           	22          	50          	150         	0           	Open  	;
+ P-471           	J-867           	J-868           	193         	40          	150         	0           	Open  	;
+ P-472           	J-867           	J-869           	772         	50          	150         	0           	Open  	;
+ P-473           	J-860           	J-870           	30          	50          	150         	0           	Open  	;
+ P-474           	J-870           	J-871           	194         	40          	150         	0           	Open  	;
+ P-475           	J-870           	J-872           	260         	50          	150         	0           	Open  	;
+ P-476           	J-872           	J-873           	45          	50          	150         	0           	Open  	;
+ P-477           	J-873           	J-874           	70          	50          	150         	0           	Open  	;
+ P-478           	J-873           	J-875           	397         	50          	150         	0           	Open  	;
+ P-479           	J-872           	J-876           	251         	50          	150         	0           	Open  	;
+ P-480           	J-876           	J-877           	276         	40          	150         	0           	Open  	;
+ P-481           	J-847           	J-876           	57          	50          	150         	0           	Open  	;
+ 1               	1               	T-44            	0.01        	12          	100         	0           	Open  	;
+
+[PUMPS]
+;ID              	Node1           	Node2           	Parameters
+
+[VALVES]
+;ID              	Node1           	Node2           	Diameter    	Type	Setting     	MinorLoss   
+
+[TAGS]
+
+[DEMANDS]
+;Junction        	Demand      	Pattern         	Category
+
+[STATUS]
+;ID              	Status/Setting
+
+[PATTERNS]
+;ID              	Multipliers
+;
+ 1               	0.08        	0.08        	0.09        	0.09        	0.1         	0.1         
+ 1               	1.96        	1.98        	1.98        	1.96        	2.22        	2.24        
+ 1               	0.75        	0.75        	0.65        	0.7         	0.8         	0.92        
+ 1               	2.66        	2.56        	0.57        	0.29        	0.26        	0.21        
+;
+ 2               	1           	1           	0.5         	0           	0           	0           
+ 2               	0           	0           	0           	0           	0           	1           
+ 2               	1           	0.5         	0           	0           	0           	0           
+ 2               	0           	0           	0           	0           	0           	0           
+
+[CURVES]
+;ID              	X-Value     	Y-Value
+
+[CONTROLS]
+
+
+
+
+
+[RULES]
+
+
+
+
+
+[ENERGY]
+ Global Efficiency  	75
+ Global Price       	0
+ Demand Charge      	0
+
+[EMITTERS]
+;Junction        	Coefficient
+
+[QUALITY]
+;Node            	InitQual
+
+[SOURCES]
+;Node            	Type        	Quality     	Pattern
+
+[REACTIONS]
+;Type     	Pipe/Tank       	Coefficient
+
+
+[REACTIONS]
+ Order Bulk            	1
+ Order Tank            	1
+ Order Wall            	1
+ Global Bulk           	0
+ Global Wall           	0
+ Limiting Potential    	0
+ Roughness Correlation 	0
+
+[MIXING]
+;Tank            	Model
+
+[TIMES]
+ Duration           	220:00 
+ Hydraulic Timestep 	1:00 
+ Quality Timestep   	0:00 
+ Pattern Timestep   	1:00 
+ Pattern Start      	0:00 
+ Report Timestep    	1:00 
+ Report Start       	0:00 
+ Start ClockTime    	12 am
+ Statistic          	NONE
+
+[REPORT]
+ Status             	No
+ Summary            	No
+ Page               	0
+
+[OPTIONS]
+ Units              	LPS
+ Headloss           	H-W
+ Specific Gravity   	0.998
+ Viscosity          	0.982157860636364
+ Trials             	40
+ Accuracy           	0.001
+ CHECKFREQ          	2
+ MAXCHECK           	10
+ DAMPLIMIT          	0
+ Unbalanced         	Continue 10
+ Pattern            	1
+ Demand Multiplier  	1.0
+ Demand Model       	PDA
+ Minimum Pressure   	0
+ Required Pressure  	0.1
+ Pressure Exponent  	0.5
+ Emitter Exponent   	0.5
+ Quality            	NONE mg/L
+ Diffusivity        	1
+ Tolerance          	0.01
+
+[COORDINATES]
+;Node            	X-Coord           	Y-Coord
+J-846           	-85.689           	125.137           
+J-847           	-76.334           	176.168           
+J-848           	-154.581          	181.696           
+J-849           	-217.093          	175.743           
+J-850           	-124.366          	83.495            
+J-851           	-163.936          	77.509            
+J-852           	-96.321           	92.392            
+J-853           	-85.264           	110.253           
+J-854           	-74.207           	82.612            
+J-855           	-84.691           	35.524            
+J-857           	-1.914            	83.462            
+J-858           	-6.592            	41.362            
+J-859           	49.274            	82.874            
+J-860           	46.372            	108.751           
+J-861           	65.702            	43.913            
+J-862           	117.810           	66.278            
+J-863           	66.281            	23.917            
+J-864           	-41.037           	-58.999           
+J-865           	65.277            	8.530             
+J-866           	56.383            	-42.893           
+J-867           	95.108            	-5.778            
+J-868           	86.965            	-41.138           
+J-869           	133.743           	-55.171           
+J-870           	42.041            	127.776           
+J-871           	111.630           	128.964           
+J-872           	35.084            	165.962           
+J-873           	18.499            	164.261           
+J-874           	-6.166            	174.042           
+J-875           	9.568             	128.539           
+J-876           	-49.542           	177.444           
+J-877           	-53.795           	233.152           
+1               	-126.445          	134.975           
+T-44            	-112.561          	126.057           
+
+[VERTICES]
+;Link            	X-Coord           	Y-Coord
+P-449           	-84.839           	141.722           
+P-449           	-85.689           	152.354           
+P-449           	-82.712           	154.905           
+P-449           	-82.712           	161.709           
+P-449           	-79.310           	162.985           
+P-449           	-77.609           	169.789           
+P-450           	-109.503          	189.776           
+P-450           	-129.916          	184.248           
+P-451           	-197.106          	166.812           
+P-452           	-156.640          	155.809           
+P-452           	-155.365          	141.351           
+P-452           	-133.251          	97.549            
+P-452           	-121.344          	90.745            
+P-453           	-126.514          	82.612            
+P-455           	-83.138           	103.024           
+P-459           	-38.060           	75.807            
+P-459           	-35.934           	86.439            
+P-459           	-8.718            	83.462            
+P-460           	-3.190            	52.844            
+P-460           	-12.970           	50.717            
+P-462           	-72.081           	124.712           
+P-462           	-72.931           	117.483           
+P-462           	-46.991           	115.782           
+P-462           	-42.313           	118.758           
+P-462           	-37.635           	109.828           
+P-462           	-20.200           	106.426           
+P-462           	1.914             	105.575           
+P-462           	43.589            	103.874           
+P-464           	52.519            	72.405            
+P-464           	66.552            	53.269            
+P-467           	45.715            	27.754            
+P-467           	35.084            	26.478            
+P-467           	24.027            	22.651            
+P-467           	13.821            	22.651            
+P-467           	1.914             	20.524            
+P-467           	-1.063            	9.468             
+P-467           	-2.339            	1.813             
+P-467           	2.339             	0.962             
+P-467           	-18.499           	-1.589            
+P-467           	-38.486           	-47.942           
+P-469           	52.326            	-1.682            
+P-469           	52.326            	-25.922           
+P-469           	55.728            	-25.922           
+P-471           	76.719            	-19.067           
+P-471           	82.248            	-21.193           
+P-472           	109.503           	-25.829           
+P-472           	116.733           	-27.530           
+P-474           	90.792            	131.091           
+P-474           	92.068            	122.586           
+P-478           	19.349            	145.549           
+P-478           	8.718             	146.400           
+P-479           	35.084            	190.627           
+P-480           	-44.439           	210.188           
+
+[LABELS]
+;X-Coord             Y-Coord             Label & Anchor Node
+
+[BACKDROP]
+  DIMENSIONS  	-234.635          	-73.606           	151.285           	247.760           
+ UNITS          	None
+ FILE           	
+ OFFSET         	0.00            	0.00            
+
+[END]
