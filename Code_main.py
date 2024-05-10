@@ -1,5 +1,5 @@
-from EPyT_IWS.functions import fn
-from EPyT_IWS.functions import graph
+from EPANET_IWS.functions import fn
+from EPANET_IWS.functions import graph
 from os import getcwd
 import sys
 import subprocess
