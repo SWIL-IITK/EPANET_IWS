@@ -315,7 +315,7 @@ class fn:
         node_names = d.getNodeNameID()
         flow_unit = d.getFlowUnits()
         artificial_pipe_length = 10  # 10 m is the distance between ferrule point and oht inlet
-        house_connection_pipe_diameter = 19.03  # in mms (0.75 in pipe)
+        house_connection_pipe_diameter = 19.03  # in mm (0.75 in pipe)
         artificial_pipe_diameter = house_connection_pipe_diameter * (
             math.ceil((arr1[num1] * (24 * 3600 * 1000) / num2) / num3)) ** 0.38
         artificial_pipe_CHW = 130
